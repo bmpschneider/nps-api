@@ -27,6 +27,7 @@ This project was developed with the following technologies:
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [YARN](https://yarnpkg.com/)
+- [Jest](https://jestjs.io/)
 
 ## 🔗 Project Links
 
