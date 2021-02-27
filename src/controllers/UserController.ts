@@ -12,9 +12,12 @@ class UserController {
       email: yup.string().email().required()
     });
 
-    if (!(await schema.isValid(req.body))) {
-      return res.status(400).json({error: "Validation Failed!"});
+    try {
+      await schema.validate(req.body, { abortEarly: false });
+    } catch(err) {
+      return res.status(400).json({ error: err });
     }
+    
 
     const usersRepository = getCustomRepository(UsersRepository);
 
