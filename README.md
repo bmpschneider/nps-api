@@ -34,6 +34,7 @@ This project was developed with the following technologies:
 - [YARN](https://yarnpkg.com/)
 - [Jest](https://jestjs.io/)
 - [Typescript](https://www.typescriptlang.org)
+- [Handlebars](https://handlebarsjs.com)
 
 ## 🔗 Installing
 
