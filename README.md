@@ -5,7 +5,6 @@
       <a href="#-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-installing">Installing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-configuring">Configuring</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-      <a href="#-configuring">Configuring</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-routes">Routes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
       <a href="#-requests">Requests</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -34,6 +33,7 @@ This project was developed with the following technologies:
 - [Express](https://expressjs.com/pt-br/)
 - [YARN](https://yarnpkg.com/)
 - [Jest](https://jestjs.io/)
+- [Typescript](https://www.typescriptlang.org)
 
 ## 🔗 Installing
 
@@ -46,7 +46,7 @@ Or:
 $ npm install
 ```
 
-## Configuring
+## 🔗 Configuring
 The application use just one database: [SQLite](https://www.sqlite.org/index.html).
 
 ### SQLite
@@ -77,13 +77,13 @@ In this file you may configure app's port and a url to documentation (this will 
 ### Notion
 - [Environment](https://www.notion.so/Configura-es-do-ambiente-Node-js-ae9fea3f78894139af4268d198294e2a)
 
-## Usage
+## 🔗 Usage
 To start up the app run:
 ```
 $ yarn start
 ```
 
-## Routes
+## 🚀 Routes
 |route|HTTP Method|params|description
 |:---|:---:|:---:|:---:
 |`/users`|POST|Body with user `name` and `email`.|Create a new user
@@ -94,7 +94,7 @@ $ yarn start
 |`/answers/:value`|GET|survey `value` url parameter and survey user `id` query parameter.|Set user's avaliation to one survey
 |`/nps/:survey_id`|GET|`survey_id` url parameter.|Show survey NPS
 
-## Requests
+## 🚀 Requests
 * `POST /users`
 
 Request body:
@@ -125,7 +125,7 @@ Request body:
 }
 ```
 
-## Running the tests
+## 🚀 Running the tests
 [Jest](https://jestjs.io/) was the choice to test the app, to run:
 ```
 $ yarn test
